@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Mission 1 Result</title>
+</head>
+<body>
+     <!-- 메시지를 표시할 제목 -->
+    <h1 id="message" th:text="${message}"></h1>
+
+    <script>
+        // sessionStorage에서 입력한 메시지를 가져와 화면에 표시
+        var userInput = sessionStorage.getItem("userInput");
+        //위에서 가져온 사용자 입력 값을 message라는 id를 가진 <h1> 태그의 텍스트 콘텐츠로 설정하여 화면에 표시
+        document.getElementById('message').textContent = userInput;
+    </script>
+
+</body>
+</html>

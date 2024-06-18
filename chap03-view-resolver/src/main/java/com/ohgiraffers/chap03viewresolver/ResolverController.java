@@ -62,7 +62,7 @@ public class ResolverController {
     }
 
     @GetMapping("modelandview-redirect")
-    public ModelAndView modelAndViewRedirect(ModelAndView mv){
+    public ModelAndView modelAndViewRedirect(ModelAndView mv) {
         mv.setViewName("redirect:/");
         return mv;
     }
